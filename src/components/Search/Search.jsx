@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Search.module.css";
-import { ReactComponent as SearchIcon } from "../../assets/Search_icon.svg";
+import { ReactComponent as SearchIcon } from "../../assets/SearchImage.svg";
 export default function Search({ placeholder }) {
   const onSubmit = (e) => {
     e.preventDefault();
