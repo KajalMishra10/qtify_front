@@ -5,8 +5,7 @@ import Logo from '../Logo/Logo'
 import styles from './Navbar.module.css'
 
 const Navbar = () => {
-  return (
-    <nav className={styles.navbar}>
+  return (<nav className={styles.navbar}>
         <Logo />
         <Search />
         <FeedbackButton children="Give Feedback"/>
