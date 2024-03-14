@@ -1,17 +1,20 @@
-import React from 'react'
-import FeedbackButton from '../FeedbackButton/Button'
-import Search from '../Search/Search'
-import Logo from '../Logo/Logo'
-import styles from './Navbar.module.css'
 
-const Navbar = () => {
-  return (<nav className={styles.navbar}>
+
+
+import styles from "./Navbar.module.css";
+import Logo from "../Logo/Logo";
+import Search from "../Search/Search";
+import Button from '../FeedbackButton/Button'
+import { Link } from "react-router-dom";
+export default function Navbar() {
+  return (
+    <nav className={styles.navbar}>
+      <Link to="/">
         <Logo />
-        <Search />
-        <Button children="Give Feedback"/>
-    </nav>
-    
-  )
-}
+      </Link>
 
-export default Navbar
+      <Search placeholder="Search an album of your choice" />
+      <Button>Give Feedback</Button>
+    </nav>
+  );
+}
