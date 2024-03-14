@@ -1,25 +1,28 @@
-.formWrapper{
-    display: flex;
-    height: 48px;
-    align-items: stretch;
-    width: 75%;
-    justify-content: center;
+/* Search.module.css */
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 48px; /* Ensure the form has a specific height */
 }
 
-.search{
-    width: 35rem;
+.search {
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid black;
+  width: 502px;
+  height: 100%;
+  color: pink;
+  padding: 14px 20px;
+  box-sizing: border-box; /* Include padding and border in the total width and height */
 }
 
-.searchButton{
-    padding: 14px 20px;
-    height: 100%;
-    width: 66px;
-    border-radius: 0px 8px 8px 0px;
-    border: 1px solid var(--color-black);
-    border-left: none;
-}
-
-#autocomplete{
-    padding: 4px;
-    color: var(--color-white);
+.searchButton {
+  border-radius: 0px 8px 8px 0px;
+  padding: 14px 20px;
+  border: 1px solid black;
+  border-left: none;
+  cursor: pointer;
+  height: 100%;
+  /* Include padding and border in the total width and height */
 }
