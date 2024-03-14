@@ -6,4 +6,5 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-primary);
+      font-family: "Poppins", sans-serif
 }
